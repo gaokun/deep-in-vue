@@ -6,8 +6,11 @@ const msg = ref('Hello World')
 
 const toggle = ref(false)
 
+const toggle = ref(false)
+
 function handleClick(event: MouseEvent) {
   console.log('click', event)
+  toggle.value = !toggle.value
   toggle.value = !toggle.value
 }
 </script>
@@ -39,7 +42,7 @@ function handleClick(event: MouseEvent) {
         </div>
       </template>
     </Sad>
-    <div>
+    <div v-show.lazy="toggle">
       my div
     </div>
   </div>
