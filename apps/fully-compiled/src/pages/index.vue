@@ -4,8 +4,11 @@ import { ref } from 'vue'
 
 const msg = ref('Hello World')
 
+const toggle = ref(false)
+
 function handleClick(event: MouseEvent) {
   console.log('click', event)
+  toggle.value = !toggle.value
 }
 </script>
 
@@ -36,5 +39,8 @@ function handleClick(event: MouseEvent) {
         </div>
       </template>
     </Sad>
+    <div v-show.lazy="toggle">
+      my div
+    </div>
   </div>
 </template>
