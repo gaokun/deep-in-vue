@@ -30,6 +30,6 @@ export default defineConfig({
     ),
   ],
   build: {
-    minify: false
-  }
+    minify: false,
+  },
 })

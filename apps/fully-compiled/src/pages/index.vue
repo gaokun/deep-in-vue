@@ -31,7 +31,7 @@ function handleClick(event: MouseEvent) {
         </div>
       </template>
     </Happy>
-    <Sad :msg="msg" @click="handleClick">
+    <Sad v-show.lazy="toggle" :msg="msg" @click="handleClick">
       <template #default>
         <div class="border border-yellow-500">
           默认插槽
@@ -39,7 +39,7 @@ function handleClick(event: MouseEvent) {
         </div>
       </template>
     </Sad>
-    <div v-show.lazy="toggle">
+    <div>
       my div
     </div>
   </div>
