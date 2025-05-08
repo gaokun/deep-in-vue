@@ -6,11 +6,8 @@ const msg = ref('Hello World')
 
 const toggle = ref(false)
 
-const toggle = ref(false)
-
 function handleClick(event: MouseEvent) {
   console.log('click', event)
-  toggle.value = !toggle.value
   toggle.value = !toggle.value
 }
 </script>
