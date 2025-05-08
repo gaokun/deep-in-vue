@@ -25,14 +25,14 @@ const DIRECTIVE_NODES = {
 export const transformLazyShow = createStructuralDirectiveTransform(
   /^(lazy-show|show)$/,
   (node, dir, context) => {
-    console.log('transformLazyShow', '===========================')
+    // console.log('transformLazyShow', '===========================')
     console.log(new Date().toLocaleString())
     // console.log('transformLazyShow node', node)
     // console.log('transformLazyShow dir', dir)
     // console.log('transformLazyShow context', context)
-    console.log('name', dir.name, JSON.stringify(dir.modifiers, null, ' '))
-    console.log('exp', dir.exp)
-    console.log('node.props', node.props)
+    // console.log('name', dir.name, JSON.stringify(dir.modifiers, null, ' '))
+    // console.log('exp', dir.exp)
+    // console.log('node.props', node.props)
 
     // 检查当前指令是否为普通的 v-show 指令（即没有 lazy 修饰符）
     if (dir.name === DIRECTIVE_NODES.SHOW && !dir.modifiers.some(i => i.content === 'lazy')) {

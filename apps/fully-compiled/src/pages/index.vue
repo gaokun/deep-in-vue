@@ -42,5 +42,6 @@ function handleClick(event: MouseEvent) {
     <div v-show.lazy="toggle">
       my div
     </div>
+    <div v-ken="toggle" />
   </div>
 </template>
