@@ -7,26 +7,26 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'home',
     component: () => import('@/pages/index.vue'),
   },
-  {
-    path: '/ice',
-    name: 'ice',
-    component: () => import('@/pages/ice.vue'),
-  },
-  {
-    path: '/counter',
-    name: 'counter',
-    component: () => import('@/pages/counter.vue'),
-  },
-  {
-    path: '/card',
-    name: 'card',
-    component: () => import('@/pages/card.vue'),
-  },
-  {
-    path: '/hello',
-    name: 'hello',
-    component: () => import('@/pages/hello.vue'),
-  },
+  // {
+  //   path: '/ice',
+  //   name: 'ice',
+  //   component: () => import('@/pages/ice.vue'),
+  // },
+  // {
+  //   path: '/counter',
+  //   name: 'counter',
+  //   component: () => import('@/pages/counter.vue'),
+  // },
+  // {
+  //   path: '/card',
+  //   name: 'card',
+  //   component: () => import('@/pages/card.vue'),
+  // },
+  // {
+  //   path: '/hello',
+  //   name: 'hello',
+  //   component: () => import('@/pages/hello.vue'),
+  // },
 ]
 
 const router = createRouter({

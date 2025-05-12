@@ -2,7 +2,7 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
-// import { transformKen } from './scripts/v-ken'
+import { transformKen } from './scripts/v-ken'
 import { transformLazyShow } from './scripts/v-lazy-show'
 // https://vite.dev/config/
 export default defineConfig({
