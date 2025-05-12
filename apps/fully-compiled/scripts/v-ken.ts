@@ -35,8 +35,8 @@ export const transformKen = createStructuralDirectiveTransform(
       createCompoundExpression([conditionExp]),
       createVNodeCall(
         context, // 编译上下文对象，包含编译过程中的各种配置、工具函数和状态信息
-        helper(FRAGMENT), // 组件或标签名，这里通过 helper 函数获取 FRAGMENT 对应的辅助函数，用于创建片段节点
-        undefined, // 节点的属性和事件对象，这里传入 undefined 表示没有额外的属性和事件
+        '"div"', // 组件或标签名，这里通过 helper 函数获取 FRAGMENT 对应的辅助函数，用于创建片段节点
+        createSimpleExpression('{ class: "your-class-name" }', false), // 节点的属性和事件对象，这里传入 undefined 表示没有额外的属性和事件
         [
           createCallExpression(helper(CREATE_TEXT), [
             '"abc"', // 文本内容
